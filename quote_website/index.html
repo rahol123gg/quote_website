@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الاقتباسات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginPage">
+        <h2>تسجيل الدخول</h2>
+        <form id="loginForm">
+            <label for="username">اسم المستخدم:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="userImage">صورة المستخدم:</label><br>
+            <input type="file" id="userImage" name="userImage" accept="image/*" required><br><br>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </div>
+    
+    <div class="container" id="quotePage" style="display:none;">
+        <h2>نشر الاقتباس</h2>
+        <form id="quoteForm">
+            <label for="quote">الاقتباس:</label><br>
+            <textarea id="quote" name="quote" rows="4" required></textarea><br><br>
+            <button type="submit">نشر الاقتباس</button>
+        </form>
+        <div id="quotesList">
+            <h3>الاقتباسات المنشورة:</h3>
+            <ul id="quotes"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
